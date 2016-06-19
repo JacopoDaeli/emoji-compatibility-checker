@@ -1,8 +1,12 @@
 'use strict'
 
 module.exports = function (_emoji) {
+  if (!window || !window.document) {
+    throw new Error('You can use this library only in the Browser.')
+  }
+
   var emoji = _emoji || '\ud83d\ude04'
-  
+
   function hasColor (ctx, width) {
     var data = ctx.getImageData(0, 0, width, width).data
     for (var i = 0; i < data.length; i += 4) {

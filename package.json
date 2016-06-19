@@ -1,6 +1,6 @@
 {
   "name": "emoji-compatibility-checker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimalistic library for checking if the platform supports unicode emoji.",
   "main": "index.js",
   "scripts": {
